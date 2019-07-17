@@ -26,3 +26,4 @@ bootmnt=/mnt/boot_partition
 mkdir -p $bootmnt
 mount /dev/disk/by-label/boot $bootmnt
 copy_file_if_exists "${bootmnt}/ignition/config.ign" "${destination}/user.ign"
+copy_file_if_exists "${bootmnt}/ignition/network.ign" "${destination}/network.ign"
